@@ -43,3 +43,13 @@ body {
     font-size: 1.625em;
     font-weight: 300;    
 }
+
+@media screen and (max-width: 992px) {
+    .container {
+        position: inherit;
+        background: #333 url(/img/background.jpg) 100% 50% no-repeat;
+        background-size: 100%;
+        height: 1200px;
+        width: 1920px;
+    }
+}
