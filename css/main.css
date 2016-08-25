@@ -11,7 +11,7 @@ body {
 
 .container {
     position: absolute;
-    background: #333 url(/img/background.jpg) 100% 50% no-repeat;
+    background: #333 url(/img/background.jpg) 100% 100% no-repeat;
     background-size: cover;
     height: 100%;    
     width: 100%;
