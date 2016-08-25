@@ -43,9 +43,3 @@ body {
     font-size: 1.625em;
     font-weight: 300;    
 }
-
-@media screen and (max-width: 992px) {
-    .container {
-        background-size: contain;
-    }
-}
