@@ -10,8 +10,9 @@ body {
 }
 
 .container {
+    position: absolute;
     background: #333 url(/img/background.jpg) 100% 50% no-repeat;
-    height: 1200px;    
+    height: 1200px;
     width: 100%;
 }
 
