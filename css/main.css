@@ -5,14 +5,14 @@ html {
 }
 
 body {
-    background: #333 url(/img/background.jpg) center no-repeat;
-    height: 100%;
-    width: 1920px;    
     color: #fff;
     font: 16px 'Roboto', Arial, sans-serif;
 }
 
 .container {
+    background: #333 url(/img/background.jpg) no-repeat;
+    height: 100%;
+    width: 1920px;     
 }
 
 .content {
