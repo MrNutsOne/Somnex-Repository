@@ -11,8 +11,8 @@ body {
 
 .container {
     background: #333 url(/img/background.jpg) bottom no-repeat;
+    background-size: contain;
     height: auto;
-    width: 1920px;
 }
 
 .content {
