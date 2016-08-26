@@ -17,10 +17,16 @@ body {
     width: 100%;
 }
 
-.content {
+.content, .content2 {
+    display: none;    
+    position: absolute;
     padding-top: 250px;
-    width: 300px;
+    width: 100%;
     margin: 0 auto;
+}
+
+.visible {
+    display: block;
 }
 
 .logotype {
