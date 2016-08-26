@@ -10,10 +10,8 @@ body {
 }
 
 .container {
-    position: absolute;
-    background: #333 url(/img/background.jpg) 100% 50% no-repeat;
-    background-size: cover;
-    height: 100%;
+    background: #333 url(/img/background.jpg) center no-repeat;
+    height: auto;
     width: 100%;
 }
 
