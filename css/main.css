@@ -12,11 +12,10 @@ body {
 .container {
     background: #333 url(/img/background.jpg) bottom no-repeat;
     background-size: contain;
-    height: auto;
 }
 
 .content {
-    padding-top: 13%;
+    padding: 423px 536px;
     width: 300px;
     margin: 0 auto;
 }
