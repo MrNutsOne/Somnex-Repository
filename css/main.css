@@ -4,6 +4,10 @@ html {
     overflow: hidden;
 }
 
+.a {
+    color: #fff;
+}
+
 body {
     color: #fff;
     font: 16px 'Roboto', Arial, sans-serif;
