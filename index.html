@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/viewportchecker.js"></script>
+    <script src="js/code.js"></script>
 </head>
 <body> 
     <div class="container">
@@ -34,36 +35,6 @@
             </div>
         </div>        
     </div>
-<script type="text/javascript">
-jQuery(document).ready(function() {
-	jQuery('.content').addClass('visible').viewportChecker({
-	    classToAdd: 'animated bounceInUp', // Class to add to the elements when they are visible
-	    offset: 100,
-	   });   
-});
-    
-//jQuery(document).ready(function() {
-//    setTimeout(function() {
-//        $('.content').viewportChecker({
-//         classToAdd: 'animated bounceInUp', // Class to add to the elements when they are visible
-//         offset: 100,
-//        }); 
-//    }, 100);
-//});
-    
-$('.bottom').click(function() {
-	$('.content').viewportChecker({
-	    classToAdd: 'animated bounceOutUp', // Class to add to the elements when they are visible
-	    offset: 100    
-    });
-    setTimeout(function() {
-        $('.content2').viewportChecker({
-            classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
-            offset: 100    
-        });
-    }, 800);
-});  
-</script>      
 </body>
 </html>
 
