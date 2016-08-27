@@ -15,11 +15,11 @@ jQuery('.bottom').click(function () {
             classToAdd: 'pos-a',
             offset: 100
         });
-    }, 800);
+    }, 900);
     setTimeout(function () {
         jQuery('.content-start').viewportChecker({
             classToAdd: 'visible animated bounceInUp visible',
             offset: 100
         });
-    }, 800);
+    }, 900);
 });

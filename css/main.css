@@ -19,17 +19,20 @@ body {
 }
 
 .header {
-    position: absolute;
+    padding-top: 30px;
+}
+
+.navbar {
+    position: relative;
+    margin: 0px;    
+    padding: 0px;
     text-align: center;
-    list-style: none;
-    z-index: 1;
-    width: 100%;
 }
 
 .navbar li {
     display: inline-block;
-    margin-top: 30px;
-    padding: 0px 30px;
+    padding: 10px 30px;
+    list-style: none;
 }
 
 .navbar li a {
@@ -46,13 +49,31 @@ body {
     transition: linear 0.10s;
 }
 
+.navbar .social {
+    position: absolute;
+    left: 140px;
+}
+
+.navbar .social a:hover {
+    border: 0;
+}
+
+.navbar .auth {
+    position: absolute;
+    right: 140px;
+}
+
+.fix {
+    padding-right: 6px;
+}
+
 .content {  
-    padding: 300px 0px;
+    padding: 251px 0px;
 }
 
 .content-start {
     display: none;
-    padding: 240px 0px;
+    padding: 289px 0px;
     text-align: center;
 }
 
@@ -102,7 +123,8 @@ body {
 .content-start h1 {
     font-size: 2.7em;
     font-weight: 500;
-    padding: 50px 0px;
+    padding-bottom: 50px;
+    margin: 0;
 }
 
 .content-start li {
