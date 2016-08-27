@@ -17,8 +17,8 @@ body {
     position: absolute;
     background: #333 url(../img/background.jpg) center no-repeat;
     background-size: cover;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 .content {
