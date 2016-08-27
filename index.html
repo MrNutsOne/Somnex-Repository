@@ -2,10 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta content='true' name='HandheldFriendly'/>
-    <meta content='width' name='MobileOptimized'/>
-    <meta content='yes' name='apple-mobile-web-app-capable'/>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">   
     <title>Somnex — The Second Coming</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
@@ -14,6 +11,13 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/viewportchecker.js"></script>
+    <script type="text/javascript">
+            if (window.devicePixelRatio !== 1) { // Костыль для определения иных устройств, с коэффициентом отличным от 1		
+              var dpt = window.devicePixelRatio;
+              var widthM = window.screen.width * dpt;
+              var widthH = window.screen.height * dpt;
+              document.write('<meta name="viewport" content="width=' + widthM+ ', height=' + widthH + '">');
+            }
     </script>    
 </head>
 <body>
