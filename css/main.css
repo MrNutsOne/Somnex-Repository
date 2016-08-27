@@ -14,11 +14,10 @@ body {
 }
 
 .container {
+    position: absolute;
     background: #333 url(../img/background.jpg) top fixed repeat;
-    height: 1200px;
-    min-height: 100%;
-    max-width: 100%;    
-    width: 1920px;    
+    height: 100%;    
+    width: 100%;    
     /*position: absolute;
     background: #333 url(../img/background.jpg) center no-repeat;
     background-size: cover;
