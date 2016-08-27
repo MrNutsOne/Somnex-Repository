@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    background: #333 url(../img/background.jpg) top fixed no-repeat;
+    background: #333 url(../img/background.jpg) top no-repeat;
     height: 1200px;
     min-height: 100%;
     max-width: 100%;    
