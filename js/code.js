@@ -30,5 +30,5 @@ $('.bottom').click(function() {
             classToAdd: 'pos-a', // Class to add to the elements when they are visible
             offset: 100    
         });
-    }, 800);    
+    }, 900);    
 });  
