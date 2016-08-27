@@ -17,8 +17,6 @@ body {
     position: absolute;
     background: #333 url(../img/background.jpg) top no-repeat;
     height: 100%;
-    min-height: 50%;
-    max-width: 100%;    
     width: 1920px;    
     /*position: absolute;
     background: #333 url(../img/background.jpg) center no-repeat;
