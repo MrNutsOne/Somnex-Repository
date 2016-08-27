@@ -17,7 +17,7 @@ jQuery(document).ready(function() {
 $('.bottom').click(function() {
 	$('.content').viewportChecker({
 	    classToAdd: 'animated bounceOutUp', // Class to add to the elements when they are visible
-	    offset: 400,
+	    offset: 100,
     });
     setTimeout(function() {
         $('.content-start').viewportChecker({
