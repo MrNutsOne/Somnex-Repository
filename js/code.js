@@ -1,5 +1,5 @@
 jQuery(document).ready(function() {
-	jQuery('.content').addClass('visible pos-n').viewportChecker({
+	jQuery('.content').addClass('visible').viewportChecker({
 	    classToAdd: 'animated bounceInUp', // Class to add to the elements when they are visible
 	    offset: 100,
 	   });   

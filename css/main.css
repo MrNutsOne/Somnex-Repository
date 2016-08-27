@@ -38,7 +38,7 @@ body {
 }
 
 .pos-n {
-    position: inherit;
+    position: absolute;
 }
 
 .visible {
