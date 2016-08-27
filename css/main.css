@@ -15,20 +15,59 @@ body {
 
 .container {
     display: block;
-    background: #333 url(../img/background.jpg) top repeat;
+    background: #fff url(../img/background.jpg) top repeat-y;
+}
+
+.header {
+    position: absolute;
+    text-align: center;
+    list-style: none;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 0px 30px;
+}
+
+.navbar li a {
+    color: #fff;
+    padding: 10px 5px;    
+    font-size: 1.125em;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: #f6803f;
+    border-bottom: 3px solid #f6803f;
+    transition: linear 0.10s;
 }
 
 .content {  
     padding: 300px 0px;
-    width: 100%;
-    margin: 0 auto;
 }
 
 .content-start {
     display: none;
     padding: 240px 0px;
-    width: 100%;
     text-align: center;
+}
+
+.link {
+    padding: 20px 0px;
+}
+
+.bottom { 
+    text-decoration: none;
+}
+
+.bottom:hover {
+    color: #f6803f;
+    transition: linear 0.10s;    
+    text-decoration: none;    
 }
 
 .pos-a {
@@ -51,7 +90,7 @@ body {
     text-align: center;
 }
 
-.title {
+.title {    
     font-size: 2.125em;
 }
 
