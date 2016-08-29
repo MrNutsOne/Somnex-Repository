@@ -19,44 +19,44 @@ body {
 }
 
 .navbar {
-    position: relative;
-    margin: 0px;    
+    width: 65%;
+    margin: 0 auto;    
     padding: 0px;
     text-align: center;
 }
 
 .navbar li {
     display: inline-block;
-    padding: 10px 30px;
+    padding: 10px 15px;
     list-style: none;
 }
 
-.navbar li a {
+.navbar li a, .auth a, .social a {
     color: #fff;
-    padding: 10px 5px;    
+    padding: 7px 5px;    
     font-size: 1.125em;
     font-weight: 300;
     text-decoration: none;
 }
 
-.navbar li a:hover {
+.navbar li a:hover, .auth a:hover, .social a:hover {
     color: #f6803f;
     border-bottom: 3px solid #f6803f;
     transition: linear 0.10s;
 }
 
-.navbar .social {
-    position: absolute;
-    left: 140px;
+.social {
+    float: left;
+    padding: 10px 30px;
 }
 
-.navbar .social a:hover {
+.social a:hover {
     border: 0;
 }
 
-.navbar .auth {
-    position: absolute;
-    right: 140px;
+.auth {
+    float: right;
+    padding: 10px 30px;
 }
 
 .fix {
@@ -146,4 +146,39 @@ body {
 
 .text-start .subtitle {
     margin-top: 10px;
+}
+
+@media screen and (max-width: 1152px) {
+    html {
+        overflow: auto;
+    }
+    .social, .auth {
+        float: none;
+        text-align: center;
+    }
+    .content {
+        padding: 133px 0px;        
+    }
+    .content-start {
+        padding: 172px 0px;
+    }
+}
+
+
+@media screen and (max-width: 397px) {
+    .content-start li {
+        padding: 20px 0px;
+    }
+    .content-start h1 {
+        font-size: 2em
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .navbar {
+        width: auto;
+    }
+    .social, .auth {
+        padding: 10px 0px;
+    }
 }
