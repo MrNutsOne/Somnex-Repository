@@ -177,7 +177,7 @@ body {
 
 .content-history {
     display: none;
-    padding: 131px 0px;
+    padding: 46px 0px;
 }
 
 .link {
@@ -336,7 +336,7 @@ body {
 @media screen and (max-width: 700px) {
     .history {
         width: 85%;
-        padding: 10px 15px 0px 14px;
+        padding: 10px 15px 0px 15px;
     }
 }
 
