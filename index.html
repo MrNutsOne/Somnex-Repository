@@ -9,23 +9,86 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/viewportchecker.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>    
+    <script src="js/viewportchecker.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <div class="social"><a href="http://vk.com/somnex"><i class="fa fa-vk fix" aria-hidden="true"></i>ВКонтакте</a> / <a href=""><i class="fa fa-twitch fix" aria-hidden="true"></i>Твитч</a></div>
-            <div class="auth"><a href="/register"><i class="fa fa-user-plus fix" aria-hidden="true"></i>Регистрация</a> / <a href="http://vk.com/somnex"><i class="fa fa-sign-in fix" aria-hidden="true"></i>Авторизация</a></div>
+            <div class="social"><a target="_blank" href="http://vk.com/somnex"><i class="fa fa-vk fix" aria-hidden="true"></i>ВКонтакте</a> / <a target="_blank" href="https://www.twitch.tv/pemoht_hacocob"><i class="fa fa-twitch fix" aria-hidden="true"></i>Твитч</a></div>
+            <div class="auth"><a href="#" id="reg"><i class="fa fa-user-plus fix" aria-hidden="true"></i>Регистрация</a> / <a href="#" id="auth"><i class="fa fa-sign-in fix" aria-hidden="true"></i>Авторизация</a></div>
             <ul class="navbar">
                 <li><a href="/forum"><i class="fa fa-users fix" aria-hidden="true"></i>Форум</a></li>
                 <li><a href="/buy"><i class="fa fa-shopping-cart fix" aria-hidden="true"></i>Магазин привелегий</a></li>
                 <li><a href="/info"><i class="fa fa-info fix" aria-hidden="true"></i></i>О проекте</a></li>
-            </ul>            
+            </ul>
+            <div class="form" id="auth-form">
+                <form method="post" action="#" style="position: relative;">
+                    <ul>
+                        <li class="close"><a href="#" id="auth-close"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+                        <li><i class="fa fa-sign-in fix" aria-hidden="true"></i>Форма авторизации</li>
+                        <li>
+                            <label for="login_name"></label>
+                            <input type="text" autocomplete="off" name="login_name" class="name" placeholder="Логин">
+                        </li>
+                        <li>
+                            <label for="login_password"></label>
+                            <input type="password" name="login_password" class="password" placeholder="Пароль">
+                        </li>
+                        <li style="padding-bottom: 0px;">
+                             <button class="orange" onclick="submit();" type="submit" title="Войти">Войти</button>
+                        </li>
+                        <li class="form-text">
+                            <a href="#">Восстановление пароля</a>
+                        </li>
+                    </ul>
+                    <input name="login" type="hidden" id="login" value="submit" />
+                </form>
+            </div>
+            <div class="form" id="reg-form">
+                <form method="post" action="#" style="position: relative;">
+                    <ul>
+                        <li class="close"><a href="#" id="reg-close"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+                        <li><i class="fa fa-user-plus fix" aria-hidden="true"></i>Регистрация аккаунта</li>
+                        <li>
+                            <label for="reg_name"></label>
+                            <input type="text" autocomplete="off" name="reg_name" class="name" placeholder="Никнейм">
+                        </li>
+                        <li>
+                            <label for="reg_password"></label>
+                            <input type="password" name="reg_password" class="password" placeholder="Пароль">
+                        </li>
+                        <li>
+                            <label for="reg_email;"></label>
+                            <input type="text" name="reg_email" class="email" placeholder="Email">
+                        </li>                      
+                        <li style="padding-bottom: 0px;">
+                             <button class="orange" onclick="submit();" type="submit" title="Зарегистрироватся">Зарегистрироватся</button>
+                        </li>
+                        <li class="form-text"><a href="#">При регистрации вы принимаете правила проекта</a></li>
+                    </ul>
+                    <input name="reg" type="hidden" id="register" value="submit" />
+                </form>
+            </div>
+            <div class="form" id="launcher-form">
+                <ul>
+                    <li class="close"><a href="#" id="launcher-close"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+                    <li><i class="fa fa-cloud-download fix" aria-hidden="true"></i>Загрузка лаунчера</li>
+                    <li class="download">
+                        <a href="#" class="windows">
+                            <i class="fa fa-windows" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="linux">
+                            <i class="fa fa-linux" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="form-text"><a href="#">Внимание! Для корректной работы лаунчера и клиента установите последнюю версию Java</a></li>
+                </ul>
+            </div>                              
         </div>
         <div class="content">
             <div class="logotype">
-                <a href="http://vk.com/somnex"><img src="img/logotype.png" alt="Logotype"></a>
+                <a target="_blank" href="http://vk.com/somnex"><img src="img/logotype.png" alt="Logotype"></a>
             </div>
             <div class="text">
                 <div class="title">Somnex Project</div>
@@ -39,21 +102,21 @@
                 <div class="icon-start"><img src="img/book.png" alt=""></div>
                 <div class="text-start">
                     <div class="title">Шаг 1.</div>
-                    <div class="subtitle">Прежде чем начать игру зарегистрируйтесь на проекте и выполните валидацию аккаунта</div>
+                    <div class="subtitle">Прежде чем начать игру <a href="#" id="reg-content">зарегистрируйтесь</a> на проекте и выполните валидацию аккаунта</div>
                 </div>
             </li>
             <li>
                 <div class="icon-start"><img src="img/steave.png" alt=""></div>
                 <div class="text-start">
                     <div class="title">Шаг 2.</div>
-                    <div class="subtitle">Авторизуйтесь на сайте и войдите в личный кабинет, чтобы изменить свой скин (необязательно)</div>
+                    <div class="subtitle"><a href="#" id="auth-content">Авторизуйтесь</a> на сайте и войдите в личный кабинет, чтобы изменить свой скин (необязательно)</div>
                 </div>
             </li>
             <li>
                 <div class="icon-start"><img src="img/stone.png" alt=""></div>
                 <div class="text-start">
                     <div class="title">Шаг 3.</div>
-                    <div class="subtitle">Скачайте лаунчер, запустите и дождитесь загрузки необходимых файлов, после этого можно играть!</div>
+                    <div class="subtitle">Скачайте <a href="#" id="launcher-content">лаунчер</a>, запустите и дождитесь загрузки необходимых файлов, после этого можно играть!</div>
                 </div>
             </li>
         </div>

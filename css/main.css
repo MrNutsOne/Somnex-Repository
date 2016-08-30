@@ -59,6 +59,108 @@ body {
     padding: 10px 30px;
 }
 
+.form {
+    display: none;
+    position: absolute;
+    top: 35%;
+    left:50%;
+    margin-left:-150px;
+    width: 320px;
+    z-index: 1; 
+    list-style: none; 
+}
+
+.form ul {
+    position: relative;    
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px 35px 10px 35px;
+    margin: 0;
+    list-style: none;
+}
+
+.form .close {
+    position: absolute;
+    top: 4px;
+    right: 8px;    
+    padding: 0px;
+    font-size: 1.125em;
+}
+
+.form .close a {
+    color: #3498DB;
+}
+
+.form ul li {
+    color: #333;
+    font-weight: 300;
+    text-align: center;
+    padding: 9px 0px;
+}
+
+.form-text {  
+    text-align: center;
+}
+
+.form-text a {
+    color: #3498DB;
+    font-size: 0.875em;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.form-text a:hover {
+    border-bottom: 1px solid #3498DB;   
+    transition: 0.10s linear;
+}
+
+#launcher-form ul {
+    padding: 20px;
+}
+
+.form .download a{
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+.windows {
+    color: #3498DB;
+    font-size: 6em;
+}
+
+.linux {
+    color: #f6803f;
+    font-size: 6em;
+}
+
+.orange {
+    border: 0;
+    height: 35px;
+    width: 250px;    
+    color: #f1f1f1;
+    background: #f6803f;
+    letter-spacing: 0.03em;
+}
+
+.form .name, .email, .password:-moz-placeholder { color: #333; }
+.form .name, .email, .password:-webkit-input-placeholder { color: #333;}
+.form .name, .email, .password:not([type=submit]) {
+    border: 1px solid #dedede;
+    font-size: 1em;
+    color: #333;
+    width: 228px;
+    height: 36px;
+    border-radius: 4px;
+    padding: 0px 10px;
+}
+
+.form .name:focus, .email:focus, .password:focus {
+    border: 2px solid #f6803f;
+    width: 228px;
+    height: 34px;
+    padding: 0px 9px;
+}
+
 .fix {
     padding-right: 6px;
 }
@@ -71,6 +173,11 @@ body {
     display: none;
     padding: 289px 0px;
     text-align: center;
+}
+
+.content-history {
+    display: none;
+    padding: 131px 0px;
 }
 
 .link {
@@ -89,6 +196,10 @@ body {
 
 .pos-a {
     position: absolute;
+}
+
+.hidden {
+    display: none;
 }
 
 .visible {
@@ -120,7 +231,6 @@ body {
     font-size: 2.7em;
     font-weight: 500;
     padding-bottom: 50px;
-    margin: 0;
 }
 
 .content-start li {
@@ -128,6 +238,16 @@ body {
     padding: 0px 65px;
     list-style: none;
     vertical-align: text-top;
+}
+
+.content-start li a {
+    color: #3498DB;
+    text-decoration: none; 
+}
+
+.content-start li a:hover {
+    border-bottom: 1px solid #3498DB;   
+    transition: 0.10s linear;
 }
 
 .icon-start img {
@@ -148,6 +268,49 @@ body {
     margin-top: 10px;
 }
 
+.history {
+    width: 66%;
+    margin: 0 auto;
+    font-weight: 300;
+    text-align: left;
+}
+
+.history p {
+    color: #f1f1f1;    
+    line-height: 23px;
+    padding-bottom: 30px;
+}
+
+.history p a {
+    color: #3498DB;
+    text-decoration: none; 
+}
+
+.history p a:hover {
+    border-bottom: 1px solid #3498DB;   
+    transition: 0.10s linear;
+}
+
+.history-title {
+    font-size: 1.7em;
+    padding-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.history-subtitle {
+    color: #f6803f;
+    padding: 0px 10px 5px 0px;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 1600px) {
+    html {
+        overflow: hidden;
+    }
+}
+
 @media screen and (max-width: 1152px) {
     html {
         overflow: auto;
@@ -162,6 +325,19 @@ body {
     .content-start {
         padding: 172px 0px;
     }
+    .content-start li {
+        padding: 0px 20px;
+    }
+    .content-history {
+        padding: 50px 0px
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .history {
+        width: 85%;
+        padding: 10px 15px 0px 15px;
+    }
 }
 
 
@@ -171,6 +347,13 @@ body {
     }
     .content-start h1 {
         font-size: 2em
+    }
+    .form {
+        width: 280px;
+        margin-left: -140px;
+    }
+    .form ul {
+        padding: 10px 15px 10px 15px
     }
 }
 

@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+h1, h2, p {
+    margin: 0;
+}
+
 article,
 aside,
 details, /* 1 */
@@ -72,11 +76,6 @@ strong {
 
 dfn {
   font-style: italic;
-}
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 
 /**
@@ -184,6 +183,7 @@ input,
 select,
 textarea {
   font: inherit; /* 1 */
+  outline: 0;     
   margin: 0; /* 2 */
 }
 

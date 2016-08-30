@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">   
+    <title>Somnex — The Second Coming</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/viewportchecker.js"></script> 
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="social"><a target="_blank" href="http://vk.com/somnex"><i class="fa fa-vk fix" aria-hidden="true"></i>ВКонтакте</a> / <a target="_blank" href="https://www.twitch.tv/pemoht_hacocob"><i class="fa fa-twitch fix" aria-hidden="true"></i>Твитч</a></div>
+            <div class="auth"><a href="#" id="reg"><i class="fa fa-user-plus fix" aria-hidden="true"></i>Регистрация</a> / <a href="#" id="auth"><i class="fa fa-sign-in fix" aria-hidden="true"></i>Авторизация</a></div>
+            <ul class="navbar">
+                <li><a href="/forum"><i class="fa fa-users fix" aria-hidden="true"></i>Форум</a></li>
+                <li><a href="/buy"><i class="fa fa-shopping-cart fix" aria-hidden="true"></i>Магазин привелегий</a></li>
+                <li><a href="/info"><i class="fa fa-info fix" aria-hidden="true"></i></i>О проекте</a></li>
+            </ul>
+            <div class="form" id="auth-form">
+                <form method="post" action="#" style="position: relative;">
+                    <ul>
+                        <li class="close"><a href="#" id="auth-close"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+                        <li><i class="fa fa-sign-in fix" aria-hidden="true"></i>Форма авторизации</li>
+                        <li>
+                            <label for="login_name"></label>
+                            <input type="text" autocomplete="off" name="login_name" class="name" placeholder="Логин">
+                        </li>
+                        <li>
+                            <label for="login_password"></label>
+                            <input type="password" name="login_password" class="password" placeholder="Пароль">
+                        </li>
+                        <li style="padding-bottom: 0px;">
+                             <button class="orange" onclick="submit();" type="submit" title="Войти">Войти</button>
+                        </li>
+                        <li class="form-text">
+                            <a href="#">Восстановление пароля</a>
+                        </li>
+                    </ul>
+                    <input name="login" type="hidden" id="login" value="submit" />
+                </form>
+            </div>
+            <div class="form" id="reg-form">
+                <form method="post" action="#" style="position: relative;">
+                    <ul>
+                        <li class="close"><a href="#" id="reg-close"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+                        <li><i class="fa fa-user-plus fix" aria-hidden="true"></i>Регистрация аккаунта</li>
+                        <li>
+                            <label for="reg_name"></label>
+                            <input type="text" autocomplete="off" name="reg_name" class="name" placeholder="Никнейм">
+                        </li>
+                        <li>
+                            <label for="reg_password"></label>
+                            <input type="password" name="reg_password" class="password" placeholder="Пароль">
+                        </li>
+                        <li>
+                            <label for="reg_email;"></label>
+                            <input type="text" name="reg_email" class="email" placeholder="Email">
+                        </li>                      
+                        <li style="padding-bottom: 0px;">
+                             <button class="orange" onclick="submit();" type="submit" title="Зарегистрироватся">Зарегистрироватся</button>
+                        </li>
+                        <li class="form-text"><a href="#">При регистрации вы принимаете правила проекта</a></li>
+                    </ul>
+                    <input name="reg" type="hidden" id="register" value="submit" />
+                </form>
+            </div>
+            <div class="form" id="launcher-form">
+                <ul>
+                    <li class="close"><a href="#" id="launcher-close"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+                    <li><i class="fa fa-cloud-download fix" aria-hidden="true"></i>Загрузка лаунчера</li>
+                    <li class="download">
+                        <a href="#" class="windows">
+                            <i class="fa fa-windows" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="linux">
+                            <i class="fa fa-linux" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="form-text"><a href="#">Внимание! Для корректной работы лаунчера и клиента установите последнюю версию Java</a></li>
+                </ul>
+            </div>                              
+        </div>
+        <div class="content">
+            <div class="logotype">
+                <a href="http://vk.com/somnex"><img src="img/logotype.png" alt="Logotype"></a>
+            </div>
+            <div class="text">
+                <div class="title">Somnex Project</div>
+                <div class="subtitle">The Second Coming</div>
+                <div class="link"><a href="#" class="bottom">История создания проекта</br><i class="fa fa-2x fa-angle-down" aria-hidden="true"></i></a></div>
+            </div>
+        </div>
+        <div class="content-history">
+            <div class="history">
+                <h1 class="history-title">История создания проекта</h1>
+                <h2 class="history-subtitle">Начало положено</h2>
+                <p>Данный проект был создан по инициативе трех достаточно близких друзей из Санкт-Петербурга в ноябре 2014 года.
+Наименование "Somnex" было придумано из наших никнеймов: <a href="http://vk.com/skoy_sama">Skoy</a>, <a href="http://vk.com/MrNuts">MrNuts</a> и <a href="http://vk.com/ind3x">Ind3x</a>.
+Причиной возникновения проекта стало желание создать идеальный Minecraft сервер для нашего клана <a href="http://vk.com/mlpmc">My Little Pony: Multigaming Comminuty</a>.
+Первоначально проект был заточен под клан, он существовал почти два месяца, пока мы не поняли, что тут работы не на один год, после мы решили заморозить проект.</p>
+                <h2 class="history-subtitle">Проект для масс</h2>
+                <p>На следующий день мы решились, что нужно сделать полный редизайн под массы и создать новый проект.
+Вот так 26 декабря 2014 года началась работа над Somnex Project.
+Во время разработки сервера и лаучнера, мы столкнулись с многими проблемами и ошибками, на их исправления уходили недели, иногда и месяцы.
+В итоге 17 мая 2015 года, мы смогли благополучно запустить бета-версию классического сервера, благодаря нашим игрокам мы правили баги, за что им большое спасибо.
+Главной проблемой нового проекта стало решение сложностей, из-за которых все плавно уходило из наших рук, проект постепенно умирал.
+13 сентября 2015 года проект покинул главный технический администратор, а у команды не осталось ни вдохновения, ни желания работать, проект прекратил работу.</p>
+               <h2 class="history-subtitle">Возрождение</h2>
+               <p>В один прекрасный день 8 декабря 2015 года, главный технический администратор вернулся, предложив старой команде и новому сотруднику <a href="http://vk.com/ff220v">FireFlash220v</a>, продолжить работу
+Так был запущен проект Somnex - Reborn, разработка плавно двигалась к релизу, который состоялся 1 апреля 2016 года.
+На новом проекте было много нового, мы все-таки решили создать RPG сервер с модами.
+Все было достаточно неплохо, вдохновение не заканчивалось, но были проблемы в команде.
+В итоге, проект снова закрылся 24 июля 2016 всем стало лень доделывать оставшийся контент, но не это была главная причина.
+Один умный человек сказал: "Мы всего лишь друзья, а не коллеги, поэтому не можем просить друг друга сделать что-либо в срок, также соглашаться с тем контентом которые уже есть.",
+От этого разработка контента уходила на месяца, а то и на годы, это была главная ошибка нашей команды.</p>
+               <h2 class="history-subtitle">Второе пришествие</h2>
+               <p>Ровно через месяц, 24 августа, главный технический администратор (он же MrNuts) и аноним, решили поднять проект за один месяц, не упираться в контент и сделать сервер таким, каким он должен был быть с самого начала.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/code.js"></script>
+</body>
+</html>
